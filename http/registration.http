@@ -6,7 +6,16 @@
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
 
-GET http://127.0.0.1:5000/
+GET {{host}}/
 Accept: application/json
+
+###
+
+POST {{host}}/register
+Content-Type: application/json
+
+{
+  "phoneNumber": {{default-phone-number}}
+}
 
 ###
